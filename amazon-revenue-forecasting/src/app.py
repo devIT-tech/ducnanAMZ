@@ -9,7 +9,8 @@ from model import SalesLSTM
 # ===== Cấu hình đường dẫn tuyệt đối (an toàn) =====
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # thư mục gốc
 DATA_DIR = os.path.join(BASE_DIR, "data", "sales_history")
-MODEL_DIR = os.path.join(BASE_DIR, "best_model")
+MODEL_DIR = os.path.join(BASE_DIR, "best_models")  
+
 
 # ===== Hàm tải mô hình và dự báo =====
 def predict_sales(asin_id, input_seq):
